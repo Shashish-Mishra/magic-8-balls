@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <title>Super Magic 8 Ball</title>
+</head>
+
+<body onload="load();">
+    <div class="center">
+        <h1 id="userhead"></h1>
+        <input type="text" id="userques" class="username" />
+        <button class="btn btn-primary btn-grad" onclick="shake()">Enter</button>
+        <button class="btn btn-primary btn-grad" onclick="window.location.href='ques.html'">TryAgain</button>
+        <button class="btn btn-primary btn-grad" onclick="window.location.href='index.html'">Quit</button>
+    </div>
+    <div class="row">
+        <img id="ball" alt="Magic 8 Ball" src="8ball.png">
+        <div id="fortune">
+            <div id="questions">
+                <h3>Click on questions to get prediction..</h3>
+                <ul>
+                    <li onclick="shake()">Will I win the lottery in 2021?</li>
+                    <li onclick="shake()">Will Donald Trump be our next President?</li>
+                    <li onclick="shake()">Will we get more snow this year than last year?</li>
+                    <li onclick="shake()">Should I order pizza tonight?</li>
+                    <li onclick="shake()">Well, should I cook dinner instead?</li>
+                    <li onclick="shake()">Should we do this again?</li>
+                    <li onclick="shake()">Should I skip my surgery and go on vacations?</li>
+                    <li onclick="shake()">Should I start dieting?</li>
+                    <li onclick="shake()">Will I buy a car in 2021?</li>
+                    <li onclick="shake()">Will I be millionare in 2021?</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="script.js"></script>
